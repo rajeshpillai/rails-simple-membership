@@ -94,13 +94,13 @@ form .field, form .actions {
   margin: 12px 0;
 }
 
-#articles h2 {
+#users h2 {
   font-size: 16px;
   margin-bottom: 2px;
   margin-top: 20px;
 }
 
-#articles .info {
+#users .info {
   font-style: italic;
   color: #333;
   margin-bottom: 8px;

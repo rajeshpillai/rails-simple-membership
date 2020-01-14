@@ -1,0 +1,12 @@
+<h1>All Users</h1>
+
+<div id="users">
+<% @users.each do |user| %>
+  <h2>
+    <%= user.email %>
+  </h2>
+  <div class="info">
+    on <%= user.created_at.strftime('%b %d, %Y') %>
+  </div>
+<% end %>
+</div>

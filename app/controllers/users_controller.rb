@@ -1,8 +1,12 @@
 class UsersController < ApplicationController
+  before_action :authorize, only: [:index]
   def new
     @user = User.new
   end
 
+  def index
+    @users = User.all
+  end
   def create
     @user = User.new(user_params)
     p @user
@@ -13,6 +17,8 @@ class UsersController < ApplicationController
       render "new"
     end
   end
+
+  
 
   private
   def user_params()
