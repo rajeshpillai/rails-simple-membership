@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   has_secure_password  # simple auth support for model using password_digest column
 
-  attr_accessible :email, :password, :password_confirmation
+  attr_accessor :email, :password, :password_confirmation
 
   validates_uniqueness_of :email
 
