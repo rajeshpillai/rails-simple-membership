@@ -1,6 +1,7 @@
 class User < ApplicationRecord
-  validates_uniqueness_of :email
   has_secure_password  # simple auth support for model using password_digest column
+  validates_uniqueness_of :email
+  validates :password, length: {minimum: 8}, allow_nil: true
   #attr_accessor :email, :password, :password_confirmation (throws error)
 
 
