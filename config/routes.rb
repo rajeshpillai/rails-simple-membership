@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'password_resets/new'
   #get 'sessions/new'
   #get 'home/index'
 
